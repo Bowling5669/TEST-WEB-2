@@ -1,0 +1,228 @@
+/* ฟอนต์ */
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Itim", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* พื้นหลัง */
+body {
+  background: linear-gradient(to right, rgb(189, 233, 255), rgb(217, 250, 255));
+  padding: 20px;
+}
+
+/* แถบเมนู */
+.topnav {
+  background-color: #4e4e4e;
+  height: 70px;
+  border-radius: 12px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topnav h3 {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+.topnav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #6bc9ff;
+  color: rgb(70, 0, 92);
+}
+
+/* การ์ดเพลง */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+.song-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin: 40px auto;
+  max-width: 1400px;
+}
+
+.card {
+  text-align: center;
+  border: solid 2px #000;
+  background: linear-gradient(to right, rgb(50, 80, 248), rgb(255, 88, 171));
+  width: 380px; 
+  min-height: 480px; 
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  border: solid 2px #fff;
+  width: 100%;
+  height: 260px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card .info {
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 15px;
+  text-align: left;
+  color: #333;
+}
+
+.card .info p {
+  margin: 6px 0;
+}
+
+
+
+/* กล่องรีวิว */
+.container {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.rating {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.stars {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.star {
+  cursor: pointer;
+  margin: 0 5px;
+  transition: transform 0.2s;
+}
+
+.star:hover {
+  transform: scale(1.3);
+}
+
+.one { color: rgb(255, 0, 0); }
+.two { color: rgb(255, 106, 0); }
+.three { color: rgb(251, 255, 120); }
+.four { color: rgb(255, 255, 0); }
+.five { color: rgb(24, 159, 14); }
+
+textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  resize: none;
+  font-size: 14px;
+}
+
+button {
+  background: linear-gradient(to right, #007BFF, #00a2ff);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #0056b3, #007BFF);
+}
+
+.reviews {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.review {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px 0;
+  background: #f9f9f9;
+}
+
+.review p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.home-card {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: #000;
+}
+
+.home-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.home-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
